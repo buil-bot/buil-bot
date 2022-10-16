@@ -1,0 +1,112 @@
+{
+  "name": "Buil/all-in-one",
+  "timeout": 30000,
+  "connector": false,
+  "events": {
+    "functions/prefix-manager.js": {
+      "name": "discord.message.create"
+    },
+    "functions/welcome-manager.js": {
+      "name": "discord.guild.member.add"
+    },
+    "functions/interactions/button/eco/find-1.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "eco-find-1"
+      }
+    },
+    "functions/interactions/button/eco/find-2.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "eco-find-2"
+      }
+    },
+    "functions/interactions/button/eco/find-3.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "eco-find-3"
+      }
+    },
+    "functions/interactions/button/eco/find-4.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "eco-find-4"
+      }
+    },
+    "functions/interactions/button/eco/find-5.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "eco-find-5"
+      }
+    },
+    "functions/interactions/button/report.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "rep"
+      }
+    },
+    "functions/interactions/modal/submit/report.js": {
+      "name": "discord.modal.submit.interaction",
+      "subtype": {
+        "custom_id": "report"
+      }
+    },
+    "functions/commands-creator.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/voice-channel-manager.js": {
+      "name": "discord.voice.state.update"
+    },
+    "functions/music-queue-manager.js": {
+      "name": "discord.bot.playback.finished"
+    },
+    "functions/interactions/slash-commands/mod.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "mod"
+      }
+    },
+    "functions/interactions/slash-commands/eco.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "eco"
+      }
+    },
+    "functions/interactions/slash-commands/setup.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "setup"
+      }
+    },
+    "functions/interactions/slash-commands/music.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "music"
+      }
+    },
+    "functions/interactions/slash-commands/level.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "level"
+      }
+    },
+    "functions/interactions/slash-commands/help.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "help"
+      }
+    },
+    "functions/interactions/select-menu/help.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "help-menu"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "default_prefix",
+      "description": "This will be the prefix of your bot if you dont provide a server specific prefix"
+    }
+  ]
+}
